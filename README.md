@@ -4,7 +4,7 @@
 
 The **COVID-19 Global Data Tracker** is a data analysis project that uses real-world COVID-19 data to visualize and compare global trends in cases, deaths, and vaccinations over time. The project is implemented in a well-documented Jupyter Notebook using Python and popular data libraries.
 
-This analysis provides both visual insights and narrative summaries, making it ideal for presentations, reports, or dashboards.
+This analysis provides both visual insights and narrative summaries.
 
 ---
 
@@ -34,7 +34,6 @@ This analysis provides both visual insights and narrative summaries, making it i
 
 COVID-19-Global-Data-Tracker/
 │
-├── owid-covid-data.csv                # Source dataset (Our World in Data)
 ├── COVID-19\_Global\_Data\_Tracker.ipynb # Main Jupyter Notebook
 ├── README.md                          # Project documentation
 └── output/                            # (Optional) Folder for visuals or reports
@@ -70,6 +69,20 @@ Open `COVID-19_Global_Data_Tracker.ipynb` and run the cells sequentially.
 
 ---
 
+## 📥 Data Handling
+
+The dataset is automatically downloaded in the notebook using the following code:
+
+```python
+import pandas as pd
+
+url = "https://covid.ourworldindata.org/data/owid-covid-data.csv"
+df = pd.read_csv(url)
+df.to_csv("owid-covid-data.csv", index=False)  # Optional: Save a local copy
+```
+
+---
+
 ## 📈 Sample Visuals
 
 * 📉 Line charts: Cases & deaths over time
@@ -91,3 +104,9 @@ Open `COVID-19_Global_Data_Tracker.ipynb` and run the cells sequentially.
 > * Kenya maintained a relatively lower death rate compared to total cases.
 
 ---
+Happy Analyzing! 🔬📊
+
+```
+
+Let me know if you'd like to add contributor credits or your name at the bottom.
+```
