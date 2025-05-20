@@ -105,8 +105,3 @@ df.to_csv("owid-covid-data.csv", index=False)  # Optional: Save a local copy
 
 ---
 Happy Analyzing! 🔬📊
-
-```
-
-Let me know if you'd like to add contributor credits or your name at the bottom.
-```
